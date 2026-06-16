@@ -8,7 +8,7 @@
       content="Ambiguous Parallax is an interactive Three.js sculpture built around optical alignment, shifting shadows, and a GLB model."
     />
     <link rel="icon" type="image/png" href="./Stairs.png" />
-    <title>Stairs &amp; Doors to Nowhere</title>
+    <title>Where Are We Going?</title>
   </head>
   <body>
     <canvas id="scene"></canvas>
@@ -16,7 +16,7 @@
     <main class="hud" aria-label="Scene controls">
       <header class="brand">
         <p class="eyebrow">Inspired by <em>Ambiguous wall-Stairs YB1;3</em>, 2022 by Byungjoo Kim</p>
-        <h1>Stairs &amp; Doors to Nowhere</h1>
+        <h1>Where Are We Going?</h1>
       </header>
 
       <nav class="toolbar" aria-label="View controls">
@@ -37,6 +37,7 @@
 
       <section class="light-panel" aria-label="Light position">
         <div class="panel-title">Adjust Light</div>
+        <div class="panel-title">Position:</div>
         <label>
           <span>X</span>
           <input type="range" min="-7" max="7" step="0.1" value="4" data-light-axis="x" />
@@ -49,12 +50,13 @@
           <span>Z</span>
           <input type="range" min="-7" max="7" step="0.1" value="4" data-light-axis="z" />
         </label>
+        <div class="panel-title">Intensity & Temperature:</div>
         <label>
-          <span>I</span>
+          <span>Intensity</span>
           <input type="range" min="0" max="24" step="0.1" value="12" data-light-intensity="true" />
         </label>
         <label>
-          <span>K</span>
+          <span>Temperature</span>
           <input type="range" min="2000" max="9000" step="50" value="4200" data-light-temperature="true" />
         </label>
       </section>
@@ -66,9 +68,8 @@
             X
           </button>
         </div>
-        <p>Left drag: rotate the view</p>
-        <p>Middle wheel / scroll: zoom</p>
-        <p>Right drag: locked to the front-facing side</p>
+        <p>Left Mouse Button: Drag to rotate the view</p>
+        <p>Scroll Wheel: Scroll to zoom</p>
       </section>
 
       <output class="status" id="status">Loading Stairs.glb</output>
